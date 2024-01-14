@@ -35,14 +35,14 @@ export const ShowNFTs = ({ onClusterChange }) => {
       </select>
       <div>
         <div className={styles.container}>
-          <h1 className={styles.title}>NFT Mint Address</h1>
+          <h1 className={styles.title}>Claim your rewards here!</h1>
           <div className={styles.nftForm}>
             <input
               type="text"
               value={nft ? nft.mint.address.toBase58() : ""}
               readOnly
             />
-            <button onClick={onClick}>Pick Random NFT</button>
+            <button onClick={onClick}>Claim</button>
           </div>
           {nft && (
             <div className={styles.nftPreview}>
